@@ -1,0 +1,60 @@
+.latest-collections {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.latest-collections-cont {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.latest-collections-cont p {
+  width: 75%; /* Equivalent to w-3/4 */
+  margin-left: auto; /* Equivalent to m-auto */
+  margin-right: auto; /* Centers the element horizontally */
+  color: #4b5563; /* Equivalent to text-gray-600 */
+  font-size: 0.75rem; /* Equivalent to text-xs */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+  gap: 1rem; /* gap-4 */
+  row-gap: 1.5rem; /* gap-y-6 */
+}
+
+@media (min-width: 640px) { /* sm: */
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr); /* grid-cols-3 */
+  }
+}
+
+@media (min-width: 768px) { /* md: */
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr); /* grid-cols-4 */
+  }
+}
+
+@media (min-width: 1024px) { /* lg: */
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr); /* grid-cols-5 */
+  }
+}
+
+  
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .latest-collections-cont p {
+    font-size: 0.875rem; /* Equivalent to sm:text-sm */
+  }
+}
+
+@media (min-width: 768px) { /* md breakpoint in Tailwind (768px) */
+  .latest-collections-cont p {
+    font-size: 1rem; /* Equivalent to md:text-base */
+  }
+}

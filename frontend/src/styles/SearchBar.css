@@ -1,0 +1,40 @@
+.search-div {
+  border-top: 1px solid #e5e7eb; /* Adds a top border (light gray) */
+  border-bottom: 1px solid #e5e7eb; /* Adds a bottom border (light gray) */
+  background-color: #f9fafb; /* Light gray background */
+  text-align: center; /* Centers the text */
+}
+
+.search-cont {
+  display: inline-flex; /* Sets the element as an inline flexbox container */
+  align-items: center; /* Aligns items vertically at the center */
+  justify-content: center; /* Aligns items horizontally at the center */
+  border: 1px solid #9ca3af; /* Adds a solid gray border (#9ca3af is Tailwind's border-gray-400) */
+  padding: 0.5rem 1.25rem; /* px-5 (1.25rem) for horizontal, py-2 (0.5rem) for vertical padding */
+  margin: 1.25rem 0.75rem; /* my-5 (1.25rem top and bottom), mx-3 (0.75rem left and right) */
+  border-radius: 9999px; /* Fully rounds the element (rounded-full) */
+  width: 75%; /* Sets the width to 3/4 of the parent container */
+}
+
+.search-input {
+  flex: 1; /* Allows the element to grow and take up available space in the flex container */
+  outline: none; /* Removes the default focus outline */
+  background-color: inherit; /* Inherits the background color from the parent element */
+  font-size: 0.875rem; /* Sets the font size to 0.875rem (14px, equivalent to Tailwind's text-sm) */
+}
+
+.search-cont img {
+  width: 1rem;
+}
+
+.search-close {
+  display: inline; /* Makes the element inline */
+  width: 0.75rem; /* Sets the width to 3, which is 0.75rem (12px) */
+  cursor: pointer; /* Changes the cursor to a pointer (usually for clickable elements) */
+}
+
+@media (min-width: 640px) { /* For small screens (sm breakpoint in Tailwind) */
+  .search-cont {
+    width: 50%; /* Sets the width to 1/2 of the parent container for sm breakpoint */
+  }
+}

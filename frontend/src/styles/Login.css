@@ -1,0 +1,72 @@
+.login-form {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  align-items: center; /* items-center */
+  width: 90%; /* w-[90%] */
+  margin: 0 auto; /* m-auto (centers the login-form horizontally) */
+  margin-top: 3.5rem; /* mt-14 (14 * 0.25rem = 3.5rem) */
+  gap: 1rem; /* gap-4 (4 * 0.25rem = 1rem) */
+  color: #1f2937; /* text-gray-800 corresponds to #1f2937 */
+}
+
+.login-form-div {
+  display: inline-flex; /* inline-flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* gap-2 (2 * 0.25rem = 0.5rem) */
+  margin-bottom: 0.5rem; /* mb-2 (2 * 0.25rem = 0.5rem) */
+  margin-top: 2.5rem; /* mt-10 (10 * 0.25rem = 2.5rem) */
+}
+
+.login-form-current-state {
+  font-family: 'Prata', serif; /* prata-regular (assuming the 'Prata' font is imported) */
+  font-weight: normal; /* regular (normal font weight) */
+  font-size: 1.875rem; /* text-3xl (3 * 0.625rem = 1.875rem) */
+  line-height: 2.25rem; /* Default line-height for text-3xl (36px) */
+}
+
+.login-form-hr {
+  border: none; /* border-none */
+  height: 1.5px; /* h-[1.5px] */
+  width: 2rem; /* w-8 (8 * 0.25rem = 2rem) */
+  background-color: #2d2d2d; /* bg-gray-800 corresponds to #2d2d2d */
+}
+
+.login-form-input {
+  width: 100%; /* w-full */
+  padding-left: 0.75rem; /* px-3 (3 * 0.25rem = 0.75rem) */
+  padding-right: 0.75rem; /* px-3 */
+  padding-top: 0.5rem; /* py-2 (2 * 0.25rem = 0.5rem) */
+  padding-bottom: 0.5rem; /* py-2 */
+  border: 1px solid #2d2d2d; /* border border-gray-800 (gray-800 corresponds to #2d2d2d) */
+}
+
+.login-form-forgot-password {
+  width: 100%; /* w-full */
+  display: flex; /* flex */
+  justify-content: space-between; /* justify-between */
+  font-size: 0.875rem; /* text-sm (14px) */
+  margin-top: -8px; /* mt-[-8px] */
+}
+
+.login-form-forgot-password p {
+  cursor: pointer;
+}
+
+.login-form-button {
+  background-color: #000000; /* bg-black */
+  color: #ffffff; /* text-white */
+  font-weight: 300; /* font-light */
+  padding-left: 2rem; /* px-8 (8 * 0.25rem = 2rem) */
+  padding-right: 2rem; /* px-8 */
+  padding-top: 0.5rem; /* py-2 (2 * 0.25rem = 0.5rem) */
+  padding-bottom: 0.5rem; /* py-2 */
+  margin-top: 1rem; /* mt-4 (4 * 0.25rem = 1rem) */
+}
+
+
+
+@media (min-width: 640px) { /* sm */
+  .login-form {
+    max-width: 24rem; /* sm:max-w-96 (96 * 0.25rem = 24rem) */
+  }
+}

@@ -1,0 +1,68 @@
+.orders-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px; /* Tailwind's gap-3 is 12px */
+  align-items: start;
+  border: 2px solid #e5e7eb; /* Tailwind's border-gray-200 */
+  padding: 20px; /* Tailwind's p-5 is 20px */
+  margin: 12px 0; /* Tailwind's my-3 is 12px */
+  font-size: 12px; /* Tailwind's text-xs is 12px */
+  color: #374151; /* Tailwind's text-gray-700 */
+}
+
+
+.orders-div img {
+  width: 3rem;
+}
+
+.order-item-p {
+  padding: 0rem 0.125rem;
+}
+
+.order-address-name {
+  margin-top: 12px; /* Tailwind's mt-3 */
+  margin-bottom: 8px; /* Tailwind's mb-2 */
+  font-weight: 500; /* Tailwind's font-medium */
+}
+
+.order-items-length {
+  font-size: 14px; /* Tailwind's text-sm is 14px */
+}
+
+.order-payment-method {
+  margin-top: 12px; /* Tailwind's mt-3 */
+}
+
+.order-select {
+  padding: 8px; /* Tailwind's p-2 */
+  font-weight: 600; /* Tailwind's font-semibold */
+}
+
+.order-address-p {
+  margin: 0.125rem 0;
+}
+
+/* Medium Screens (sm) */
+@media (min-width: 640px) {
+  .order-items-length {
+    font-size: 15px; /* Tailwind's sm:text-[15px] */
+  }
+}
+
+
+/* Medium Screens (sm) */
+@media (min-width: 640px) {
+  .orders-div {
+    grid-template-columns: 0.5fr 2fr 1fr;
+    padding: 32px; /* Tailwind's md:p-8 is 32px */
+    margin: 16px 0; /* Tailwind's md:my-4 is 16px */
+    font-size: 14px; /* Tailwind's sm:text-sm */
+  }
+}
+
+/* Large Screens (lg) */
+@media (min-width: 1024px) {
+  .orders-div {
+    grid-template-columns: 0.5fr 2fr 2fr 1fr 1fr;
+  }
+}

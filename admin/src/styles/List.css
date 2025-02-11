@@ -1,0 +1,60 @@
+.list-all-product-title {
+  margin-bottom: 0.5rem;
+}
+
+.list-table-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 8px */
+}
+
+.list-table-title-div {
+  display: none; /* hidden */
+}
+
+.list-item-x {
+  text-align: right; /* text-right */
+  cursor: pointer; /* cursor-pointer */
+  font-size: 1.125rem; /* text-lg (18px) */
+}
+
+.list-item-img {
+  width: 3rem;
+}
+
+.list-item-div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Default grid layout */
+  align-items: center;
+  gap: 0.5rem; /* gap-2 -> 8px */
+  padding: 0.25rem 0.5rem; /* py-1 px-2 -> 4px 8px */
+  border: 1px solid #e5e7eb; /* Default Tailwind border color */
+  font-size: 0.875rem; /* text-sm -> 14px */
+}
+
+@media (min-width: 768px) { /* md breakpoint (768px) */
+  .list-item-div {
+      grid-template-columns: 1fr 3fr 1fr 1fr 1fr; /* md:grid-cols */
+  }
+}
+
+
+@media (min-width: 768px) { /* md breakpoint (768px) */
+  .my-text-class {
+      text-align: center; /* md:text-center */
+  }
+}
+
+
+@media (min-width: 768px) { /* md breakpoint (768px) */
+  .list-table-title-div {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+      align-items: center;
+      padding: 0.25rem 0.5rem; /* py-1 px-2 -> 4px 8px */
+      border: 1px solid #e5e7eb; /* Tailwind's default border color */
+      background-color: #f3f4f6; /* bg-gray-100 */
+      font-size: 0.875rem; /* text-sm -> 14px */
+  }
+}
+

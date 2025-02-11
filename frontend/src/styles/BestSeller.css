@@ -1,0 +1,31 @@
+.bestseller-div {
+  margin-top: 2.5rem; /* my-10 corresponds to 2.5rem */
+  margin-bottom: 2.5rem; /* my-10 corresponds to 2.5rem */
+}
+
+.bestseller-div .inner-div {
+  text-align: center; /* text-center */
+  font-size: 1.875rem; /* text-3xl */
+  padding-top: 2rem; /* py-8 */
+  padding-bottom: 2rem; /* py-8 */
+}
+
+.bestseller-div .inner-p {
+  width: 75%; /* w-3/4 */
+  margin-left: auto; /* m-auto */
+  margin-right: auto; /* m-auto */
+  font-size: 0.75rem; /* text-xs */
+  color: #4a5568; /* text-gray-600 */
+}
+
+@media (min-width: 640px) { /* sm: */
+  .bestseller-div .inner-p {
+    font-size: 0.875rem; /* text-sm */
+  }
+}
+
+@media (min-width: 768px) { /* md: */
+  .bestseller-div .inner-p {
+    font-size: 1rem; /* text-base */
+  }
+}

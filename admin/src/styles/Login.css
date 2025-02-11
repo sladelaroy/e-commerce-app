@@ -1,0 +1,62 @@
+
+.login-form-p {
+  font-size: 0.875rem; /* text-sm (14px) */
+  font-weight: 500; /* font-medium */
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 0.5rem; /* mb-2 (8px) */
+}
+
+.login-form-input-div {
+  margin-bottom: 0.75rem; /* mb-3 = 3 * 0.25rem = 12px */
+  min-width: 18rem; /* min-w-72 = 72 * 0.25rem = 18rem (288px) */
+}
+/* .login-form-input {
+  width: 100%; 
+  padding: 8px 12px; 
+  border: 1px solid #d1d5db; 
+  border-radius: 0.375rem; 
+  outline: none; 
+} */
+
+.login-form-div-h1 {
+  font-size: 1.5rem; /* text-2xl = 24px */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1rem; /* mb-4 = 4 * 0.25rem = 16px */
+}
+
+.login-form-div {
+  background-color: #ffffff; /* bg-white */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -2px rgba(0, 0, 0, 0.1); /* shadow-md */
+  border-radius: 0.5rem; /* rounded-lg (8px) */
+  padding: 1.5rem 2rem; /* px-8 (32px horizontal), py-6 (24px vertical) */
+  max-width: 28rem; /* max-w-md (448px) */
+}
+
+.login-form-container {
+  min-height: 100vh; /* min-h-screen */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  width: 100%; /* w-full */
+}
+
+.login-form-input-div input {
+  outline: none; 
+  min-width: 288px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem; 
+}
+.login-form-button {
+  margin-top: 0.5rem; /* mt-2 = 2 * 0.25rem = 8px */
+  width: 100%; /* w-full */
+  padding: 0.5rem 1rem; /* py-2 (8px vertical), px-4 (16px horizontal) */
+  border: none;
+  border-radius: 0.375rem; /* rounded-md (6px) */
+  color: #ffffff; /* text-white */
+  background-color: #000000; /* bg-black */
+}
+ 
+  
+

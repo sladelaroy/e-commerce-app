@@ -1,0 +1,178 @@
+.navbarDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25rem; /* 20px */
+  padding-bottom: 1.25rem; /* 20px */
+  font-weight: 500;
+}
+
+.listElement {
+  display: none; /* Equivalent to `hidden` */
+}
+
+
+
+.listElement {
+  font-size: 0.875rem; /* Equivalent to `text-sm` (14px) */
+  line-height: 1.25rem; /* Ensures proper text line-height for small text */
+  color: #4b5563; /* Equivalent to `text-gray-700` in Tailwind */
+}
+
+.navLink {
+  display: flex; /* Equivalent to `flex` */
+  flex-direction: column; /* Equivalent to `flex-col` */
+  align-items: center; /* Equivalent to `items-center` */
+  gap: 0.25rem; /* Equivalent to `gap-1` (4px) */
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits text color from the parent */
+}
+
+.active hr {
+  width: 50%; /* Equivalent to `w-2/4` */
+  border: none; /* Equivalent to `border-none` */
+  height: 1.5px; /* Equivalent to `h-[1.5px]` */
+  background-color: #4b5563; /* Equivalent to `bg-gray-700` */
+}
+
+.navIcons {
+  display: flex; /* Equivalent to `flex` */
+  align-items: center; /* Equivalent to `items-center` */
+  gap: 1.5rem; /* Equivalent to `gap-6` (24px) */
+}
+
+.navIcons img {
+  width: 1.25rem; /* Equivalent to `w-5` (20px) */
+  cursor: pointer; /* Equivalent to `cursor-pointer` */
+}
+
+.navIcons .group {
+  position: relative; /* Ensures that the group is the context for absolute positioning of child elements */
+}
+
+.navIcons .group .dropdown-menu {
+  display: none; /* Equivalent to `hidden` */
+  position: absolute; /* Equivalent to `absolute` */
+  right: 0; /* Equivalent to `right-0` */
+  padding-top: 1rem; /* Equivalent to `pt-4` (16px) */
+}
+
+.navIcons .group:hover .dropdown-menu {
+  display: block; /* Equivalent to `group-hover:block` */
+}
+
+.navIcons .group:hover .dropdown-menu .menu {
+  display: flex; /* Equivalent to `flex` */
+  flex-direction: column; /* Equivalent to `flex-col` */
+  gap: 0.5rem; /* Equivalent to `gap-2` (8px) */
+  width: 7.5rem; /* Equivalent to `w-30` (30px) */
+  padding-top: 0.75rem; /* Equivalent to `py-3` (12px) */
+  padding-bottom: 0.75rem; /* Equivalent to `py-3` (12px) */
+  padding-left: 1.25rem; /* Equivalent to `px-5` (20px) */
+  padding-right: 1.25rem; /* Equivalent to `px-5` (20px) */
+  background-color: #f1f5f9; /* Equivalent to `bg-slate-100` (light slate gray) */
+  color: #6b7280; /* Equivalent to `text-gray-500` (gray text) */
+  border-radius: 0.375rem; /* Equivalent to `rounded` (6px) */
+}
+.navIcons p {
+  cursor: pointer;
+}
+
+.navIcons p:hover {
+  color: black;
+}
+
+
+.navIcons .cart {
+  position: relative;
+}
+
+.navIcons .cart img {
+  width: 1.25rem; /* equivalent to w-5 */
+  min-width: 1.25rem; /* equivalent to min-w-5 */
+}
+
+.navIcons .cart p {
+  position: absolute; /* equivalent to absolute */
+  right: -5px; /* equivalent to right-[-5px] */
+  bottom: -5px; /* equivalent to bottom-[-5px] */
+  width: 1rem; /* equivalent to w-4 (1rem = 16px) */
+  text-align: center; /* equivalent to text-center */
+  line-height: 1rem; /* equivalent to leading-4 (1rem = 16px) */
+  background-color: black; /* equivalent to bg-black */
+  color: white; /* equivalent to text-white */
+  aspect-ratio: 1 / 1; /* equivalent to aspect-square (1:1 aspect ratio) */
+  border-radius: 9999px; /* equivalent to rounded-full (fully rounded corners) */
+  font-size: 10px; /* equivalent to text-[-8px] (negative font size) */
+  transform: translate(0, 0); /* This is the default, so no change unless you modify translate values */
+}
+
+.menuIcon {
+  display: none;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.sideMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.3s; /* You can adjust the duration (0.3s) as needed */
+  transform: translate(0, 0); /* You can adjust translate values if needed */
+}
+
+.sideMenuFull {
+  width: 100%;
+}
+
+.sideMenuNone {
+  width: 0;
+}
+
+
+.sideMenu > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  color: #4B5563;
+  cursor: pointer;
+}
+
+.sideMenu > div:first-of-type div {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 in Tailwind is 1rem */
+  padding: 0.75rem; /* p-3 in Tailwind is 0.75rem */
+}
+
+.sideMenu > div:first-of-type div img {
+  height: 1rem; /* h-4 in Tailwind is 1rem */
+  transform: rotate(180deg) translate(0, 0); /* Adjust the translate values if necessary */
+}
+
+.sideMenu .sideMenuItems {
+  padding-top: 1.5rem; /* py-6 in Tailwind is 1.5rem */
+  padding-bottom: 1.5rem; /* py-6 in Tailwind is 1.5rem */
+  padding-left: 1.5rem; /* pl-6 in Tailwind is 1.5rem */
+  border: 1px solid #d1d5db; /* Default border color in Tailwind */
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind is 640px */
+  .listElement {
+    display: flex; /* Equivalent to `sm:flex` */
+    gap: 1.25rem; /* Equivalent to `gap-5` (20px) */
+  }
+}
+
+@media (max-width: 640px) { /* sm breakpoint in Tailwind is 640px */
+  .menuIcon {
+    display: block;
+  }
+  .active {
+    background-color: black;
+    color: white;
+  }
+}

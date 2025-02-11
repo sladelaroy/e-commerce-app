@@ -1,0 +1,62 @@
+.newsletter-div {
+  text-align: center;
+}
+
+.newsletter-title-one {
+  font-size: 1.5rem; /* Equivalent to text-2xl */
+  font-weight: 500; /* Equivalent to font-medium */
+  color: #1F2937; /* Equivalent to text-gray-800 */
+}
+
+.newsletter-title-two {
+  color: #9CA3AF; /* Equivalent to text-gray-400 */
+  margin-top: 0.75rem; /* Equivalent to mt-3 (3 * 0.25rem) */
+}
+
+.newsletter-input {
+  width: 100%; /* Equivalent to w-full */
+  border: none;
+}
+
+.newsletter-form {
+  width: 70%; /* Equivalent to w-full */
+  display: flex; /* Equivalent to flex */
+  align-items: center; /* Equivalent to items-center */
+  gap: 0.75rem; /* Equivalent to gap-3 (3 * 0.25rem) */
+  margin-left: auto; /* Equivalent to mx-auto (auto margin on both sides) */
+  margin-right: auto; /* Equivalent to mx-auto */
+  margin-top: 1.5rem; /* Equivalent to my-6 (6 * 0.25rem) */
+  margin-bottom: 1.5rem; /* Equivalent to my-6 */
+  border: 1px solid #e5e7eb; /* Equivalent to border (default Tailwind border color is gray-300) */
+  padding-left: 0.75rem; /* Equivalent to pl-3 (3 * 0.25rem) */
+}
+
+@media (min-width: 640px) { /* Equivalent to the `sm` breakpoint */
+  .my-custom-class {
+    width: 50%; /* Equivalent to sm:w-1/2 */
+  }
+}
+
+
+.newsletter-input-button {
+  background-color: #000000; /* Equivalent to bg-black */
+  border: thick;
+  color: #ffffff; /* Equivalent to text-white */
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  padding-left: 2.5rem; /* Equivalent to px-10 (10 * 0.25rem) */
+  padding-right: 2.5rem; /* Equivalent to px-10 (10 * 0.25rem) */
+  padding-top: 1rem; /* Equivalent to py-4 (4 * 0.25rem) */
+  padding-bottom: 1rem; /* Equivalent to py-4 (4 * 0.25rem) */
+}
+
+
+@media (min-width: 640px) { /* Equivalent to the `sm` breakpoint */
+  .newsletter-input {
+    flex: 1; /* Equivalent to sm:flex-1 */
+  }
+}
+
+.newsletter-input:focus {
+  outline: none; /* Equivalent to outline-none */
+}
+

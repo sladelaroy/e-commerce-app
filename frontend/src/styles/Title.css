@@ -1,0 +1,31 @@
+.title-container {
+  display: inline-flex; /* inline-flex */
+  align-items: center; /* items-center */
+  margin-bottom: 0.75rem; /* mb-3 (12px based on Tailwind spacing scale) */
+}
+
+.title-container .title-one {
+  color: #6b7280;
+  /* font-size: 1.5rem; */
+  width: 100%;
+}
+
+.title-container .title-one span {
+  color: #374151; /* Gray-700 */
+  font-weight: 500; /* Medium */
+}
+
+.title-container .title-two {
+  width: 2rem; /* Equivalent to w-8 */
+  height: 1px; /* Custom height: h-[1px] */
+  background-color: #374151; /* Gray-700 */
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .title-container .title-two {
+    width: 3rem; /* Equivalent to sm:w-12 */
+    height: 2px; /* Custom height: sm:h-[2px] */
+  }
+}
+

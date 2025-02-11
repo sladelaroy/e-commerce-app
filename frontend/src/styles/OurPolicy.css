@@ -1,0 +1,39 @@
+.our-policy-div {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  justify-content: space-around; /* justify-around */
+  gap: 3rem; /* gap-12 */
+  text-align: center; /* text-center */
+  padding-top: 5rem; /* py-20 */
+  padding-bottom: 5rem; /* py-20 */
+  font-size: 0.75rem; /* text-xs */
+  color: #374151; /* text-gray-700 */
+}
+
+.our-policy-img {
+  width: 3rem; /* w-12 corresponds to 3rem */
+  margin: auto; /* m-auto centers the element horizontally and vertically if allowed */
+  margin-bottom: 1.25rem; /* mb-5 corresponds to 1.25rem */
+}
+
+.our-policy-title {
+  font-weight: 600;
+}
+
+.our-policy-text {
+  color: #9ca3af; /* text-gray-400 */
+}
+
+@media (min-width: 640px) { /* sm: */
+  .our-policy-div {
+    flex-direction: row; /* flex-row */
+    gap: 0.5rem; /* gap-2 */
+    font-size: 0.875rem; /* text-sm */
+  }
+}
+
+@media (min-width: 768px) { /* md: */
+  .our-policy-div {
+    font-size: 1rem; /* text-base */
+  }
+}

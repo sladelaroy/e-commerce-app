@@ -1,0 +1,48 @@
+import { useState } from 'react'
+import {Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Collections from './pages/Collections'
+import Contact from './pages/Contact'
+import Product from './pages/Product'
+import Cart from './pages/Cart'
+import Login from './pages/Login'
+import PlaceOrder from './pages/PlaceOrder'
+import Orders from './pages/Orders'
+import Navbar from './components/Navbar'
+import './App.css'
+import Footer from './components/Footer'
+import SearchBar from './components/SearchBar'
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/ReactToastify.css'
+import Verify from './pages/Verify'
+
+
+function App() {
+
+  return (
+    <>
+      <div className='appDiv'>
+        <Navbar />
+        <SearchBar />
+        <ToastContainer />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/collections' element={<Collections />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/product/:productId' element={<Product/>} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/place-order' element={<PlaceOrder />} />
+          <Route path='/orders' element={<Orders />} />
+          <Route path='/verify' element={<Verify />} />
+        </Routes>
+        <Footer/>
+      </div>
+    </>
+  )
+}
+
+export default App
+

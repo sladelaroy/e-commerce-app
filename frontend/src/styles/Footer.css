@@ -1,0 +1,52 @@
+.footer-div {
+  display: flex; /* Equivalent to flex */
+  flex-direction: column; /* Equivalent to flex-col */
+  gap: 3.5rem; /* Equivalent to gap-14 (14 * 0.25rem) */
+  margin-top: 10rem; /* Equivalent to mt-40 (40 * 0.25rem) */
+  margin-bottom: 2.5rem; /* Equivalent to my-10 (10 * 0.25rem) */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+}
+
+.footer-img {
+  margin-bottom: 1.25rem; /* Equivalent to mb-5 (5 * 0.25rem) */
+  width: 8rem; /* Equivalent to w-32 (32 * 0.25rem) */
+}
+
+.footer-text {
+  width: 100%; /* Equivalent to w-full */
+  color: #4B5563; /* Equivalent to text-gray-600 */
+}
+
+.footer-title {
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  font-weight: 500; /* Equivalent to font-medium */
+  margin-bottom: 1.25rem; /* Equivalent to mb-5 (5 * 0.25rem) */
+}
+
+.footer-column {
+  display: flex; /* Equivalent to flex */
+  flex-direction: column; /* Equivalent to flex-col */
+  gap: 0.25rem; /* Equivalent to gap-1 (1 * 0.25rem) */
+  color: #4B5563; /* Equivalent to text-gray-600 */
+}
+.footer-copyright {
+  padding-top: 1.25rem; /* Equivalent to py-5 (5 * 0.25rem) */
+  padding-bottom: 1.25rem; /* Equivalent to py-5 (5 * 0.25rem) */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  text-align: center; /* Equivalent to text-center */
+}
+
+
+
+@media (min-width: 768px) { /* Equivalent to the `md` breakpoint */
+  .footer-text {
+    width: 66.6667%; /* Equivalent to md:w-2/3 */
+  }
+}
+
+@media (min-width: 640px) { /* Equivalent to the `sm` breakpoint */
+  .footer-div {
+    display: grid; /* Equivalent to grid */
+    grid-template-columns: 3fr 1fr 1fr; /* Equivalent to grid-cols-[3fr_1fr_1fr] */
+  }
+}

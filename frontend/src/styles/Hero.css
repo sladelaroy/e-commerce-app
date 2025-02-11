@@ -1,0 +1,126 @@
+.hero {
+  display: flex;
+  flex-direction: column; /* flex-col in Tailwind */
+  border: 1px solid #d1d5db; /* border-gray-400 in Tailwind */
+}
+
+.hero .heroLeft {
+  width: 100%; /* w-full in Tailwind */
+  display: flex; /* flex in Tailwind */
+  align-items: center; /* items-center in Tailwind */
+  justify-content: center; /* justify-center in Tailwind */
+  padding-top: 2.5rem; /* py-10 in Tailwind (2.5rem) */
+  padding-bottom: 2.5rem; /* py-10 in Tailwind (2.5rem) */
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero .heroLeft h1 {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.875rem; /* text-3xl (30px) */
+  line-height: 1.625; /* leading-relaxed */
+  padding-top: 0; /* Default padding */
+  padding-bottom: 0; /* Default padding */
+}
+
+
+
+.hero .heroLeft .hero-container {
+  display: flex; /* flex in Tailwind */
+  align-items: center; /* items-center in Tailwind */
+  gap: 0.5rem; /* gap-2 in Tailwind (0.5rem) */
+}
+
+.hero .heroLeft .hero-container .hero-line {
+  width: 2rem; /* w-8 in Tailwind (2rem) */
+  height: 2px; /* h-[2px] in Tailwind */
+  background-color: #414141; /* bg-[#414141] in Tailwind */
+}
+
+.hero .heroLeft .hero-line {
+  width: 2rem; /* w-8 in Tailwind (2rem) */
+  height: 2px; /* h-[2px] in Tailwind */
+  background-color: #414141; /* bg-[#414141] in Tailwind */
+}
+
+
+.hero .heroLeft .hero-container .hero-text {
+  font-weight: 500; /* font-medium in Tailwind */
+  font-size: 0.875rem; /* text-sm in Tailwind (0.875rem = 14px) */
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.hero-container-two {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* gap-2 (default Tailwind spacing scale: 0.5rem = 8px) */
+}
+
+.hero-text-two {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600; /* font-semibold */
+  font-size: 0.875rem; /* text-sm (14px) */
+  line-height: 1.25rem; /* text-sm's default line-height (20px) in Tailwind */
+}
+
+/* For screen sizes 768px and up (md breakpoint), change font size */
+@media (min-width: 768px) {
+  .hero-text {
+    font-size: 1rem; /* md:text-base in Tailwind (1rem = 16px) */
+  }
+}
+
+/* For medium screens and larger */
+@media (min-width: 768px) { /* md breakpoint */
+  .hero-text-two {
+    font-size: 1rem; /* text-base (16px) */
+    line-height: 1.5rem; /* text-base's default line-height (24px) in Tailwind */
+  }
+}
+
+/* For screen sizes 768px and up (md breakpoint), change width */
+@media (min-width: 768px) {
+  .hero-line {
+    width: 2.75rem; /* md:w-11 in Tailwind (2.75rem) */
+  }
+}
+
+/* For screen sizes 640px and up (sm breakpoint), change flex direction to row */
+@media (min-width: 640px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero-img {
+    width: 50%;
+  }
+
+  .hero .heroLeft{
+    width: 50%; /* sm:w-1/2 in Tailwind */
+    padding-top: 0; /* sm:py-0 in Tailwind (no padding top) */
+    padding-bottom: 0; /* sm:py-0 in Tailwind (no padding bottom) */
+  }
+
+  .hero .heroLeft h1 {
+    padding-top: 12px; /* sm:py-3 */
+    padding-bottom: 12px; /* sm:py-3 */
+  }
+}
+
+
+@media (min-width: 1024px) { /* Large screens (lg) */
+  .hero .heroLeft h1{
+    font-size: 3rem; /* lg:text-5xl (48px) */
+  }
+}
+.hero .heroLeft > div:first-of-type{
+  color: #414141;
+}

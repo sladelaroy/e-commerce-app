@@ -1,0 +1,225 @@
+.product-loading {
+  opacity: 0;
+}
+
+.product-div {
+  border-top-width: 2px; /* border-t-2 */
+  padding-top: 2.5rem; /* pt-10 corresponds to 10 x 0.25rem = 2.5rem */
+  transition: opacity 0.5s ease-in; /* transition-opacity ease-in duration-500 */
+  opacity: 1; /* opacity-100 */
+}
+
+.product-data {
+  display: flex; /* flex */
+  gap: 3rem; /* gap-12 corresponds to 12 x 0.25rem = 3rem */
+  flex-direction: column; /* flex-col */
+}
+
+.product-images-div {
+  flex: 1; /* flex-1 */
+  display: flex; /* flex */
+  flex-direction: column-reverse; /* flex-col-reverse */
+  gap: 0.75rem; /* gap-3 corresponds to 3 x 0.25rem = 0.75rem */
+}
+
+.product-images {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  overflow-x: auto; /* overflow-x-auto */
+  justify-content: space-between; /* justify-between */
+  width: 100%; /* w-full */
+}
+
+.product-image {
+  width: 24%; /* w-[24%] */
+  flex-shrink: 0; /* flex-shrink-0 */
+  cursor: pointer; /* cursor-pointer */
+}
+
+.product-main-image-div {
+  width: 100%; /* w-full */
+}
+
+.product-main-image {
+  width: 100%; /* w-full */
+  height: auto; /* h-auto */
+}
+
+.product-info-div {
+  flex: 1;
+}
+
+.product-data-name {
+  font-weight: 500; /* font-medium */
+  font-size: 1.5rem; /* text-2xl (2xl is typically 1.5rem) */
+  margin-top: 0.5rem; /* mt-2 corresponds to 2 x 0.25rem = 0.5rem */
+}
+
+.product-rating-div {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.25rem; /* gap-1 corresponds to 1 x 0.25rem = 0.25rem */
+  margin-top: 0.5rem; /* mt-2 corresponds to 2 x 0.25rem = 0.5rem */
+}
+
+.product-rating-div img {
+  width: 1rem;
+}
+
+.product-rating-div p {
+  padding-left: 0.5rem;
+}
+
+.product-price {
+  margin-top: 1.25rem; /* mt-5 corresponds to 5 x 0.25rem = 1.25rem */
+  font-size: 1.875rem; /* text-3xl corresponds to 3xl (1.875rem) */
+  font-weight: 500; /* font-medium */
+}
+
+.product-description {
+  margin-top: 1.25rem; /* mt-5 corresponds to 5 x 0.25rem = 1.25rem */
+  color: #6b7280; /* text-gray-500 */
+}
+
+.product-select-options {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 1rem; /* gap-4 corresponds to 4 x 0.25rem = 1rem */
+  margin-top: 2rem; /* my-8 corresponds to 8 x 0.25rem = 2rem */
+  margin-bottom: 2rem; /* my-8 (applies to both top and bottom margins) */
+}
+
+.product-select-sizes {
+  display: flex; /* flex */
+  gap: 0.5rem; /* gap-2 corresponds to 2 x 0.25rem = 0.5rem */
+}
+
+.product-sizes {
+  /* border: 1px solid; */
+  padding-top: 0.5rem; /* py-2 corresponds to 2 x 0.25rem = 0.5rem */
+  padding-bottom: 0.5rem; /* py-2 */
+  padding-left: 1rem; /* px-4 corresponds to 4 x 0.25rem = 1rem */
+  padding-right: 1rem; /* px-4 */
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+.product-size-highlight {
+  border: 1px solid #f97316; /* border-orange-500 */
+}
+
+.product-add-to-cart {
+  background-color: #000000; /* bg-black */
+  color: #ffffff; /* text-white */
+  padding-left: 2rem; /* px-8 corresponds to 8 x 0.25rem = 2rem */
+  padding-right: 2rem; /* px-8 */
+  padding-top: 0.75rem; /* py-3 corresponds to 3 x 0.25rem = 0.75rem */
+  padding-bottom: 0.75rem; /* py-3 */
+  font-size: 0.875rem; /* text-sm corresponds to 14px or 0.875rem */
+}
+
+.product-add-to-cart:active {
+  background-color: #374151; /* active:bg-gray-700 */
+}
+
+.add-to-cart-hr {
+  margin-top: 2rem; /* mt-8 corresponds to 8 x 0.25rem = 2rem */
+}
+
+.product-gurantees {
+  font-size: 0.875rem; /* text-sm corresponds to 14px or 0.875rem */
+  color: #6b7280; /* text-gray-500 */
+  margin-top: 1.25rem; /* mt-5 corresponds to 5 x 0.25rem = 1.25rem */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 0.25rem; /* gap-1 corresponds to 1 x 0.25rem = 0.25rem */
+}
+
+.product-description-reviews {
+  margin-top: 5rem; /* mt-20 corresponds to 20 x 0.25rem = 5rem */
+}
+
+
+.product-description-reviews div {
+  display: flex;
+}
+
+.product-description-reviews-b, .product-description-reviews-p {
+  border: 1px solid; /* border (default 1px solid border) */
+  padding-left: 1.25rem; /* px-5 corresponds to 5 x 0.25rem = 1.25rem */
+  padding-right: 1.25rem; /* px-5 */
+  padding-top: 0.75rem; /* py-3 corresponds to 3 x 0.25rem = 0.75rem */
+  padding-bottom: 0.75rem; /* py-3 */
+  font-size: 0.875rem; /* text-sm corresponds to 14px or 0.875rem */
+  border-bottom-width: 0px;
+}
+
+.product-description-reviews-p {
+  border-left-width: 0;
+}
+
+.product-full-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* 4 * 0.25rem = 1rem */
+  border: 1px solid; /* Default border width */
+  padding: 1.5rem; /* 6 * 0.25rem = 1.5rem */
+  font-size: 0.875rem; /* Text size for 'text-sm' */
+  color: #6b7280; /* Text color for 'text-gray-500' */
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .add-to-cart-hr {
+    width: 80%; /* sm:w-4/5 */
+  }
+}
+
+
+
+
+@media (min-width: 768px) { /* md breakpoint in Tailwind (768px) */
+  .product-description {
+    width: 80%; /* md:w-4/5 */
+  }
+}
+
+
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .product-main-image-div {
+    width: 80%; /* sm:w-[80%] */
+  }
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .product-image {
+    width: 100%; /* sm:w-full */
+    margin-bottom: 0.75rem; /* sm:mb-3 corresponds to 3 x 0.25rem = 0.75rem */
+  }
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .product-images {
+    overflow-y: scroll; /* sm:overflow-y-scroll */
+    overflow-x: visible; /* Override x-axis behavior since sm only affects y */
+    justify-content: normal; /* sm:justify-normal */
+    width: 18.7%; /* sm:w-[18.7%] */
+  }
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .product-images-div {
+    flex-direction: row; /* sm:flex-row */
+  }
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .product-data {
+    flex-direction: row; /* sm:flex-row */
+    gap: 3rem; /* sm:gap-12 (remains the same as gap-12) */
+  }
+}

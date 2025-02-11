@@ -1,0 +1,38 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #4a5568; /* This is the hex value for gray-700 in Tailwind */
+  cursor: pointer;
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits text color from the parent */
+  margin-bottom: 0.5rem;
+}
+
+.product-item .img-container {
+  overflow: hidden;
+}
+
+.product-item .img-container img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.product-item .img-container img:hover {
+  transform: scale(1.1);
+}
+
+.product-item .name {
+  padding-top: 0.5rem; /* pt-3 */
+  padding-bottom: 0.25rem; /* pb-1 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.product-item .currency-price {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+}
+
+.product-item .name, .product-item .currency-price{
+  margin: 0;
+}

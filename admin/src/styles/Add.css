@@ -1,0 +1,103 @@
+.upload-area-div img {
+  width: 5rem; /* 20 * 0.25rem = 5rem = 80px */
+}
+
+.upload-area-div {
+  display: flex; /* flex */
+  gap: 0.5rem; /* gap-2 = 2 * 0.25rem = 8px */
+}
+.upload-image-title {
+  margin-bottom: 0.5rem;
+}
+
+.upload-form {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stacks children vertically */
+  width: 100%; /* Takes full width of the parent */
+  align-items: flex-start; /* Aligns items to the start (left in LTR layout) */
+  gap: 0.75rem; /* Adds 12px spacing between child elements (3 * 0.25rem) */
+}
+
+.upload-product-image-input {
+  width: 100%; /* w-full: Takes full width of parent */
+  max-width: 500px; /* max-w-[500px]: Restricts maximum width */
+  padding: 8px 12px; /* py-2 (8px vertical), px-3 (12px horizontal) */
+}
+
+.upload-product-image-p {
+  margin-bottom: 0.5rem;
+}
+
+.upload-product-image-div {
+  width: 100%;
+}
+
+.upload-select-category {
+  width: 100%; /* Takes full width of the parent */
+  padding: 8px 12px; /* py-2 (8px vertical), px-3 (12px horizontal) */
+}
+
+.upload-select-options-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Equivalent to gap-2 */
+  width: 100%;
+}
+
+.upload-enter-price-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* px-3 (0.75rem) and py-2 (0.5rem) */
+}
+
+.upload-product-sizes-div-p {
+  background-color: #e2e8f0; /* Equivalent to bg-slate-200 */
+  padding: 0.25rem 0.75rem; /* py-3 (0.75rem) and px-1 (0.25rem) */
+  cursor: pointer;
+}
+
+.upload-product-sizes-div {
+  display: flex;
+  gap: 0.75rem; /* Equivalent to gap-3 */
+}
+
+.upload-product-bestseller-div {
+  display: flex;
+  gap: 0.5rem; /* Equivalent to gap-2 */
+  margin-top: 0.5rem; /* Equivalent to mt-2 */
+}
+
+.upload-product-bestseller-div label {
+  cursor: pointer;
+}
+
+.add-button {
+  border: thick;
+  width: 7rem; /* Equivalent to w-28 (28 * 0.25rem) */
+  padding: 0.75rem 0; /* Equivalent to py-3 */
+  margin-top: 1rem; /* Equivalent to mt-4 */
+  background-color: black; /* Equivalent to bg-black */
+  color: white; /* Equivalent to text-white */
+}
+
+
+
+.upload-product-sizes-div-active {
+  background-color: #fce7f3; /* Light pink */
+}
+
+
+
+@media (min-width: 640px) { /* sm breakpoint (640px) */
+  .upload-enter-price-input {
+    width: 120px;
+  }
+}
+
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .upload-select-options-div {
+    flex-direction: row;
+    gap: 2rem; /* Equivalent to gap-8 */
+  }
+}
+

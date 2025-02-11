@@ -1,0 +1,28 @@
+.navbar-logo {
+  width: max(10%, 80px);
+}
+
+.navbar-logout-button {
+  background-color: #4b5563; /* gray-600 */
+  color: white;
+  padding: 8px 20px; /* px-5 (20px), py-2 (8px) */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.75rem; /* text-xs (12px) */
+}
+
+.navbar-div {
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Aligns items vertically at the center */
+  justify-content: space-between; /* Distributes items with space between them */
+  padding: 8px 4%; /* py-2 (8px top & bottom), px-[4%] (4% left & right) */
+}
+
+
+/* Small screens and above (sm breakpoint) */
+@media (min-width: 640px) {
+  .navbar-logout-button {
+    padding: 8px 28px; /* sm:px-7 (28px), sm:py-2 (8px) */
+    font-size: 0.875rem; /* sm:text-sm (14px) */
+  }
+}
+

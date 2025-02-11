@@ -1,0 +1,68 @@
+.contact-div {
+  text-align: center; /* text-center */
+  font-size: 1.5rem; /* text-2xl (24px) */
+  padding-top: 2.5rem; /* pt-10 (10 * 0.25rem = 2.5rem) */
+  border-top: 1px solid; /* border-t */
+}
+
+.contact-img-div {
+  margin-top: 2.5rem; /* my-10 (10 * 0.25rem = 2.5rem) */
+  margin-bottom: 2.5rem; /* my-10 */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-xol (assuming a typo for flex-col) */
+  justify-content: center; /* justify-center */
+  gap: 2.5rem; /* gap-10 (10 * 0.25rem = 2.5rem) */
+  margin-bottom: 7rem; /* mb-28 (28 * 0.25rem = 7rem) */
+}
+
+.contact-img {
+  width: 100%; /* w-full */
+}
+
+.contact-details-div {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  justify-content: center; /* justify-center */
+  align-items: flex-start; /* items-start */
+  gap: 1.75rem; /* gap (assuming the default gap value is 0.25rem) */
+}
+
+.contact-details-text {
+  font-weight: 600; /* font-semibold */
+  font-size: 1.25rem; /* text-xl (20px) */
+  color: #4b5563; /* text-gray-600 */
+}
+
+.contact-details-p {
+  color: #6b7280; /* text-gray-500 */
+}
+
+.contact-details-button {
+  border: 1px solid black; /* border border-black */
+  padding-left: 2rem; /* px-8 (8 * 0.25rem = 2rem) */
+  padding-right: 2rem; /* px-8 */
+  padding-top: 1rem; /* py-4 (4 * 0.25rem = 1rem) */
+  padding-bottom: 1rem; /* py-4 */
+  font-size: 0.875rem; /* text-sm (14px) */
+  transition: all 0.5s ease-in-out; /* transition-all duration-500 */
+}
+
+.contact-details-button:hover {
+  background-color: black; /* hover:bg-black */
+  color: white; /* hover:text-white */
+}
+
+
+
+@media (min-width: 768px) { /* md */
+  .contact-img {
+    max-width: 480px; /* md:max-w-[480px] */
+  }
+}
+
+
+@media (min-width: 768px) { /* md */
+  .contact-img-div {
+    flex-direction: row; /* md:flex-row */
+  }
+}

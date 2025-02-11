@@ -1,0 +1,21 @@
+.app-container {
+  background-color: #f9fafb; /* bg-gray-50 */
+  min-height: 100vh; /* min-h-screen */
+}
+
+.app-sidebar-container {
+  display: flex; /* Enables flexbox */
+  width: 100%; /* Makes the element take full width of its parent */
+}
+
+.app-routes-div {
+  width: 70%; /* w-[70%] */
+  margin-left: max(5vw, 25px); /* ml-[max(5vw, 25px)] */
+  margin-right: auto; /* mx-auto centers the element horizontally */
+  margin-top: 2rem; /* my-8 = 8 * 0.25rem = 2rem (32px) */
+  margin-bottom: 2rem; /* my-8 = 2rem (32px) */
+  color: #4b5563; /* text-gray-600 */
+  font-size: 1rem; /* text-base (16px) */
+}
+
+

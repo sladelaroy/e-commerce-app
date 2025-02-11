@@ -1,0 +1,29 @@
+.appDiv {
+  padding-left: 1rem; /* Equivalent to `px-4` (16px) */
+  padding-right: 1rem; /* Equivalent to `px-4` (16px) */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
+  .appDiv {
+    padding-left: 0; /* No padding for `sm:` as no value was specified */
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) { /* md breakpoint in Tailwind (768px) */
+  .appDiv {
+    padding-left: 7vw; /* Equivalent to `md:px-[7vm]` */
+    padding-right: 7vw; /* Equivalent to `md:px-[7vm]` */
+  }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint in Tailwind (1024px) */
+  .appDiv {
+    padding-left: 9vw; /* Equivalent to `lg:px-[9vm]` */
+    padding-right: 9vw; /* Equivalent to `lg:px-[9vm]` */
+  }
+}

@@ -1,0 +1,97 @@
+.about-div {
+  font-size: 1.5rem; /* text-2xl (24px) */
+  text-align: center; /* text-center */
+  padding-top: 2rem; /* pt-8 (8 * 0.25rem = 2rem) */
+  border-top: 1px solid; /* border-t (adds a top border) */
+}
+
+.about-img-div {
+  margin-top: 2.5rem; /* my-10 (10 * 0.25rem = 2.5rem) */
+  margin-bottom: 2.5rem; /* my-10 */
+  display: flex; /* flex */
+  /* flex-direction: column;  */
+  gap: 4rem; /* gap-16 (16 * 0.25rem = 4rem) */
+}
+
+.about-img {
+  width: 100%; /* w-full */
+}
+
+.about-info-div {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-xol (assuming a typo for flex-col) */
+  justify-content: center; /* justify-center */
+  gap: 1.5rem; /* gap-6 (6 * 0.25rem = 1.5rem) */
+  color: #4b5563; /* text-gray-600 corresponds to #4b5563 */
+}
+
+.about-title-why-us {
+  font-size: 1.25rem; /* text-xl (20px) */
+  padding-top: 1rem; /* py-4 (4 * 0.25rem = 1rem) */
+  padding-bottom: 1rem; /* py-4 */
+}
+
+.about-gurantees-div {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  font-size: 0.875rem; /* text-sm (14px) */
+  margin-bottom: 5rem; /* mb-20 (20 * 0.25rem = 5rem) */
+}
+
+.about-gurantees {
+  border: 1px solid; /* border */
+  padding-left: 2.5rem; /* px-10 (10 * 0.25rem = 2.5rem) */
+  padding-right: 2.5rem; /* px-10 */
+  padding-top: 2rem; /* py-8 (8 * 0.25rem = 2rem) */
+  padding-bottom: 2rem; /* py-8 */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-xol (assuming a typo for flex-col) */
+  gap: 1.25rem; /* gap-5 (5 * 0.25rem = 1.25rem) */
+}
+
+.about-gurantees p{
+  color: #4b5563; /* text-gray-600 */
+}
+
+@media (min-width: 640px) { /* sm */
+  .about-gurantees {
+    padding-top: 5rem; /* sm:py-20 (20 * 0.25rem = 5rem) */
+    padding-bottom: 5rem; /* sm:py-20 */
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  .about-gurantees {
+    padding-left: 4rem; /* md:px-16 (16 * 0.25rem = 4rem) */
+    padding-right: 4rem; /* md:px-16 */
+  }
+}
+
+
+@media (min-width: 768px) { /* md */
+  .about-gurantees-div {
+    flex-direction: row; /* md:flex-row */
+  }
+}
+
+
+@media (min-width: 768px) { /* md */
+  .about-info-div {
+    width: 50%; /* md:w-2/4 (2/4 = 50%) */
+  }
+}
+
+
+@media (min-width: 768px) { /* md */
+  .about-img {
+    max-width: 450px; /* md:max-w-[450px] */
+  }
+}
+
+
+@media (min-width: 768px) { /* md */
+  .about-img {
+    flex-direction: row; /* md:flex-row */
+  }
+}
+

@@ -24,7 +24,7 @@
 
 .product-images {
   display: flex; /* flex */
-  flex-direction: column; /* flex-col */
+  flex-direction: row; /* flex-col */
   overflow-x: auto; /* overflow-x-auto */
   justify-content: space-between; /* justify-between */
   width: 100%; /* w-full */
@@ -209,6 +209,7 @@
     overflow-x: visible; /* Override x-axis behavior since sm only affects y */
     justify-content: normal; /* sm:justify-normal */
     width: 18.7%; /* sm:w-[18.7%] */
+    flex-direction: column;
   }
 }
 

@@ -24,9 +24,7 @@ const BestSeller = () => {
       <div className="bestseller-div">
         <div className="inner-div">
           <Title text1={"BEST"} text2={"SELLERS"} />
-          <p className="inner-p">
-          Top-rated picks loved by our customers! Shop bestsellers featuring premium quality, stylish designs, and unbeatable comfort for every occasion.
-          </p>
+          <p className="inner-p">Top-rated picks loved by our customers!.</p>
         </div>
         <div className="products-grid">
           {bestSeller.map((item, index) => {

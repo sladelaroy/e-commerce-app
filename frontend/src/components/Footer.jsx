@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <img src={assets.logo} className='footer-img' />
           <p className='footer-text'>
-            LOdifjskjhb sjdksjdjs siodksdlk skjdkjsdkjs ksjdkjskdjksd kjdbkjskjds kjsdbkjsdjsbd ksjdbkjskjd sdsfuis 
+          Shop the latest trends with us! Premium quality, fast shipping, and exclusive deals. Stay stylish—follow us for updates.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
       </div> 
       <div>
         <hr />
-        <p className='footer-copyright'>Copyright 2024@ forever.com - All Right Reserved</p>
+        <p className='footer-copyright'>Copyright 2025@ forever.com - All Right Reserved</p>
       </div>
       
     </div>

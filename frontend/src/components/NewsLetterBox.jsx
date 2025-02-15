@@ -10,7 +10,7 @@ const NewsLetterBox = () => {
     <>
       <div className='newsletter-div'>
         <p className='newsletter-title-one'>Subscribe now and get 20% off</p>
-        <p className='newsletter-title-two'>Lorem ipsim hskk  ujsdkkjka  jskdkjkdkjakjd hakdlksdlkd</p>
+        <p className='newsletter-title-two'>Exclusive deals, latest trends, and more—don’t miss out on stylish savings!</p>
 
         <form onSubmit={onSubmitHandler} className='newsletter-form'>
           <input className='newsletter-input' type='email' placeholder='Enter your email' />

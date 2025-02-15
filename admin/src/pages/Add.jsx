@@ -15,7 +15,7 @@ const Add = ({ token }) => {
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("Men");
   const [subCategory, setSubCategory] = useState("Topwear");
-  const [bestseller, setBestseller] = useState(false);
+  const [bestSeller, setBestSeller] = useState(false);
   const [sizes, setSizes] = useState([]);
 
   const onSubmitHandler = async (e) => {
@@ -33,7 +33,7 @@ const Add = ({ token }) => {
       formData.append("price", price);
       formData.append("category", category);
       formData.append("subCategory", subCategory);
-      formData.append("bestseller", bestseller);
+      formData.append("bestSeller", bestSeller);
       formData.append("sizes", JSON.stringify(sizes));
 
       const response = await axios.post(
@@ -52,7 +52,7 @@ const Add = ({ token }) => {
         setName("");
         setDescription("");
         setPrice("");
-        setBestseller(false)
+        setBestSeller(false)
         // setSizes([])
       } else {
         toast.error(response.data.message);
@@ -280,16 +280,16 @@ const Add = ({ token }) => {
         </div>
       </div>
 
-      <div className="upload-product-bestseller-div">
+      <div className="upload-product-bestSeller-div">
         <input
           onChange={(e) => {
-            setBestseller((prev) => !prev);
+            setBestSeller((prev) => !prev);
           }}
-          checked={bestseller}
+          checked={bestSeller}
           type="checkbox"
-          id="bestseller"
+          id="bestSeller"
         />
-        <label htmlFor="bestseller">Add to Bestseller</label>
+        <label htmlFor="bestSeller">Add to BestSeller</label>
       </div>
 
       <button className="add-button">ADD</button>

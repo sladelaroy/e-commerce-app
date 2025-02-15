@@ -13,6 +13,18 @@
   -moz-osx-font-smoothing: grayscale; */
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 select, input, textarea {
   border: 1px solid #c2c2c2;
   outline-color: #c586a5;

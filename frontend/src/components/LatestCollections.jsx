@@ -20,7 +20,7 @@ const LatestCollections = () => {
       <div className='latest-collections'>
         <div className='latest-collections-cont'>
           <Title text1={'LATEST'} text2={'COLLECTIONS'} />
-          <p>hsjejsdkjhjkbd sbdjskjdod budiuidjhsgvjhaekjo uieuiskejfouiejfuikeeuiwiuiu wewuieweui</p>
+          <p className='latest-collections-cont-p'>Explore fresh styles, bold designs, and timeless fashion. Our latest collection blends comfort, elegance, and trend-forward details for every occasion.</p>
         </div>
         {/* Rendering Products */}
 

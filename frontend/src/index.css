@@ -2,9 +2,25 @@ body {
   font-family: Outfit, sans-serif;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 p {
   margin: 0;
 }
 button { 
+  border: none;
+}
+input {
   border: none;
 }

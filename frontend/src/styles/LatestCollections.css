@@ -11,8 +11,10 @@
   line-height: 2.25rem;
 }
 
-.latest-collections-cont p {
+.latest-collections-cont-p {
   width: 75%; /* Equivalent to w-3/4 */
+  line-height: 1.7;
+  margin: 1px;
   margin-left: auto; /* Equivalent to m-auto */
   margin-right: auto; /* Centers the element horizontally */
   color: #4b5563; /* Equivalent to text-gray-600 */

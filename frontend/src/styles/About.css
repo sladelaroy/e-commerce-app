@@ -9,7 +9,7 @@
   margin-top: 2.5rem; /* my-10 (10 * 0.25rem = 2.5rem) */
   margin-bottom: 2.5rem; /* my-10 */
   display: flex; /* flex */
-  /* flex-direction: column;  */
+  flex-direction: column; 
   gap: 4rem; /* gap-16 (16 * 0.25rem = 4rem) */
 }
 
@@ -89,9 +89,9 @@
 }
 
 
-@media (min-width: 768px) { /* md */
-  .about-img {
-    flex-direction: row; /* md:flex-row */
+@media (min-width: 768px) { 
+  .about-img-div {
+    flex-direction: row; 
   }
 }
 

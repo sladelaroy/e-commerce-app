@@ -12,6 +12,7 @@
 
 .bestseller-div .inner-p {
   width: 75%; /* w-3/4 */
+  line-height: 1.7;
   margin-left: auto; /* m-auto */
   margin-right: auto; /* m-auto */
   font-size: 0.75rem; /* text-xs */

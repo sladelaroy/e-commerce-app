@@ -42,7 +42,9 @@
 
 .product-main-image {
   width: 100%; /* w-full */
-  height: auto; /* h-auto */
+  height: 86.7%;
+  object-fit: cover;     /* Preserve aspect ratio and crop if needed */
+  object-position: center;
 }
 
 .product-info-div {
@@ -195,6 +197,7 @@
 @media (min-width: 640px) { /* sm breakpoint in Tailwind (640px) */
   .product-image {
     width: 100%; /* sm:w-full */
+    
     margin-bottom: 0.75rem; /* sm:mb-3 corresponds to 3 x 0.25rem = 0.75rem */
   }
 }

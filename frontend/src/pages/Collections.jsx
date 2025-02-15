@@ -15,6 +15,9 @@ const Collections = () => {
 
   useEffect(() => {
     setFilterProducts(products)
+    if(window.innerWidth <= 800) {
+      setShowFilter(false)
+    }
   }, [])
 
   useEffect(() => {

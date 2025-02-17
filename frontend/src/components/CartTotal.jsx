@@ -21,7 +21,7 @@ const CartTotal = () => {
           
           <div className='cart-total-amount-inner-div'>
             <p>Shipping Fee</p>
-            <p>{currency} {delivery_fee}.00</p>
+            <p>{currency} {getCartAmount() ? delivery_fee : 0}.00</p>
           </div>
           <hr />
           <div className='cart-total-amount-inner-div'>
